@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+  mkdocs.yml: |
+    site_name: "Sample Docs Site"
+
+    nav:
+      - Home: index.md
+      - About: about.md
+
+    theme:
+      name: 'material'
+      icon:
+        logo: fontawesome/solid/jet-fighter-up

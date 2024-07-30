@@ -1,0 +1,65 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sample-docs-configmap-content
+data:
+  about.md: |
+    # About Sample Documentation Site
+
+    ## Purpose
+
+    The Sample Documentation Site is designed to test and showcase the capabilities of our Kubernetes platform and infrastructure. It provides a hands-on environment to experiment with deployment strategies, scaling, and the integration of ArgoCD for continuous delivery.
+
+    ## What is ArgoCD?
+
+    ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes. It automates the deployment of the desired application states defined in Git repositories, ensuring that the live state of your applications matches the desired state.
+
+    ## Key Benefits
+
+    - **Declarative GitOps**: Manage your infrastructure and applications declaratively using Git.
+    - **Automated Sync**: Automatically sync your Kubernetes resources to the desired state.
+    - **Scalability**: Efficiently manage applications across multiple clusters.
+    - **Real-time Monitoring**: Monitor application health and status in real-time.
+
+    ## How It Works
+
+    1. **Define Desired State**: Describe your desired application state using YAML manifests stored in a Git repository.
+    2. **Automated Sync**: ArgoCD continuously monitors your Git repository and syncs the live state to match the desired state.
+    3. **Deploy and Manage**: Deploy, scale, and manage your applications with confidence using ArgoCD's powerful features.
+
+    ## Contact Us
+
+    For more information or to get in touch with our team, please visit our [Contact Page](docs/contact.md).
+
+    ---
+
+    Thank you for visiting the Sample Documentation Site. We hope you find it helpful for your testing and development needs!
+  index.md: |
+    # Sample Documentation Site
+
+    Welcome to the Sample Documentation Site! This site serves as a testbed for our underlying hosting Kubernetes platform and infrastructure, leveraging the power of ArgoCD for continuous delivery and GitOps.
+
+    ## Features
+
+    - **Kubernetes Integration**: Seamlessly deploy and manage your applications on Kubernetes.
+    - **ArgoCD**: Utilize ArgoCD for continuous deployment and GitOps workflows.
+    - **Scalability**: Test the scalability and robustness of our infrastructure.
+    - **Documentation**: Clear and concise documentation to guide you through the setup and usage.
+
+    ## Getting Started
+
+    To get started with deploying and testing, follow the steps below:
+
+    1. **Clone the Repository**: `git clone https://url/your-repo/sample-docs.git`
+    2. **Navigate to the Project Directory**: `cd sample-docs`
+    3. **Deploy Using ArgoCD**: Follow the instructions in the [ArgoCD Setup Guide](docs/argocd-setup.md).
+
+    ## Contributing
+
+    We welcome contributions! Please see our [Contributing Guidelines](docs/contributing.md) for more information.
+
+    ## Support
+
+    If you encounter any issues or have questions, feel free to open an issue on our [GitLab Issues](https://url/your-repo/sample-docs/issues) page.
+
+    Happy Testing!
